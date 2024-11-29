@@ -3,7 +3,6 @@
 A [Next.js](https://nextjs.org) app designed to help users assess how easily their device can be tracked online. 
 
 > [!NOTE]
-
 > **Disclaimer:** This project, while not biased, is meant as a marketing campaign to sponsor the [Eyed Out Browser.](https://apps.apple.com/app/eyed-out-private-web-browser/id6475011990)
 
 
