@@ -90,7 +90,7 @@ export default function FingerprintDetector() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <Button onClick={detectFingerprint} className="bg-[#ffffff1a] hover:bg-gray-600 text-gray-100">Check Again</Button>
-            <Button variant="outline" onClick={() => window.open('https://eyed.to')} className="bg-[#16131F] hover:bg-[#C28DFF] border-[#C28DFF] hover:text-black text-gray-100">
+            <Button variant="outline" onClick={() => window.location.href = 'https://eyed.to'} className="bg-[#16131F] hover:bg-[#C28DFF] border-[#C28DFF] hover:text-black text-gray-100">
               Try Eyed Out Browser
             </Button>
           </CardFooter>
@@ -120,7 +120,7 @@ export default function FingerprintDetector() {
                     <li>Be careful about what personal information you share online.</li>
                   </ul>
                   <p className="mt-2">
-                    The <strong>Eyed Out Pro Plan</strong> offers extra features to help you stay private by blocking tracking methods and disguising your online identity.
+                    The <strong>Eyed Out Pro Plan</strong> offers extra features to help you stay private by blocking tracking methods such as FingerPrinting (through injection) and disguising your online identity.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -184,7 +184,7 @@ export default function FingerprintDetector() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
-                <AccordionTrigger className="text-gray-300 hover:text-gray-100">What is Eyed Out Browser?</AccordionTrigger>
+                <AccordionTrigger className="text-gray-300 hover:text-gray-100">What is the Eyed Out Browser?</AccordionTrigger>
                 <AccordionContent className="text-gray-400">
                   Eyed Out is a privacy-focused browser that blocks tracking attempts and protects your identity while you browse the web. It aims to help users maintain online anonymity and reduce the risk of being tracked by advertisers or malicious entities.
                 </AccordionContent>
@@ -198,9 +198,10 @@ export default function FingerprintDetector() {
           <span className="text-gray-300"> All data is processed locally. No information is sent to external servers.</span>
 
           <div className="mt-2">
-            <Button variant="link" onClick={() => window.open('https://eyed.to')} >
+
+            <a href="https://eyed.to" target="_self" rel="noopener noreferrer">
               <img src="https://aploi.de/assets/img/logos.svg" alt="Eyed Out Logo" className="w-60 h-auto" />
-            </Button>
+            </a>
           </div>
 
           <span className="text-gray-300">© 2024 Eyed™ by Aploide | All rights reserved.</span>

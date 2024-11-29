@@ -17,8 +17,6 @@ export const metadata: Metadata = {
   title: "Eyed™ Browser Fingerprint Detector",
   description: "Unlock the secrets of your online presence! Use the Eyed™ Browser Fingerprint Detector to assess your privacy and learn how to stay safe from tracking.",
   keywords: "Eyed Out Browser, browser fingerprint, privacy check, online privacy, tracking protection",
-  viewport: "width=device-width, initial-scale=1",
-  themeColor: "#16131F"
 };
 
 export default function RootLayout({
@@ -29,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#16131F]`}
       >
         {children}
       </body>
