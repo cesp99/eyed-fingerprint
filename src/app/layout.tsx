@@ -17,6 +17,19 @@ export const metadata: Metadata = {
   title: "Eyed™ Browser Fingerprint Detector",
   description: "Unlock the secrets of your online presence! Use the Eyed™ Browser Fingerprint Detector to assess your privacy and learn how to stay safe from tracking.",
   keywords: "Eyed Out Browser, browser fingerprint, privacy check, online privacy, tracking protection",
+  openGraph: {
+    title: "Eyed™ Browser Fingerprint Detector",
+    description: "Unlock the secrets of your online presence! Use the Eyed™ Browser Fingerprint Detector to assess your privacy and learn how to stay safe from tracking.",
+    images: [
+      {
+        url: "/public/og.svg", // Replace with your image path
+        width: 763,
+        height: 394,
+        alt: "Eyed™ Browser Fingerprint Detector",
+      },
+    ],
+    siteName: "Eyed™ Browser Fingerprint Detector",
+  },
 };
 
 export default function RootLayout({

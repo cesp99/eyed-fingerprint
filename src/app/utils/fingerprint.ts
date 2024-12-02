@@ -96,11 +96,11 @@ export function calculatePrivacyScore(fingerprint: Fingerprint): number {
   let score = 0;
 
   // User Agent (important)
-  if (fingerprint.userAgent.includes('Mozilla/5.0')) {
-    score += 15;
-  } else if (fingerprint.userAgent.includes('Windows') || fingerprint.userAgent.includes('Mac')) {
+  if (fingerprint.userAgent.includes('Windows') || fingerprint.userAgent.includes('Mac')) {
     score -= 10;
-  }
+  } else if (fingerprint.userAgent.includes('Mozilla/5.0')) {
+    score += 15;
+  }  
 
   // Resolution (common)
   if (fingerprint.screenResolution === '1920x1080') {
@@ -125,16 +125,16 @@ export function calculatePrivacyScore(fingerprint: Fingerprint): number {
 
   // Language (common)
   if (fingerprint.language === 'en-US') {
-    score += 5;
+    score += 10;
   } else {
     score -= 5;
   }
 
-  // Platform (semi -important)
+  // Platform (semi-important)
   if (fingerprint.platform === 'Windows' || fingerprint.platform === 'Macintosh') {
     score -= 10;
   } else {
-    score += 5;
+    score += 10;
   }
 
   // Screen Orientation (critical)
@@ -165,7 +165,8 @@ export function calculatePrivacyScore(fingerprint: Fingerprint): number {
     score -= 10;
   }
 
-  return Math.min(Math.max(score, 0), 100);
+  //min-max (-120 100)
+  return Math.min(Math.max(score, 0), 100); 
 }
 
 

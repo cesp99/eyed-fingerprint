@@ -136,8 +136,8 @@ export default function FingerprintDetector() {
                         <li>+5 for common screen resolutions.</li>
                         <li>+15 for standard color depth.</li>
                         <li>+5 for UTC timezone.</li>
-                        <li>+5 for English (US) language.</li>
-                        <li>+5 for more common platforms (e.g., Linux, Android).</li>
+                        <li>+10 for English (US) language.</li>
+                        <li>+10 for more common platforms (e.g., Linux, Android).</li>
                         <li>+10 for common screen orientations.</li>
                         <li>+10 for enabling cookies.</li>
                         <li>+10 for having a generic set of codecs.</li>
