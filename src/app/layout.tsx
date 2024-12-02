@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Unlock the secrets of your online presence! Use the Eyed™ Browser Fingerprint Detector to assess your privacy and learn how to stay safe from tracking.",
     images: [
       {
-        url: "/public/og.jpg", 
+        url: "/og.jpg", 
         alt: "Eyed™ Browser Fingerprint Detector",
       },
     ],
